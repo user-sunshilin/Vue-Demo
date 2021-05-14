@@ -1,0 +1,92 @@
+{
+    "data": {
+      "code":200,
+      "message":"路由权限请求成功",
+      "router": [
+        {
+            "path": "/",
+            "name": "home",
+            "component": "home/home",
+            "redirect":"/index/echarts",
+            "meta": {
+                "title": "home",
+                "icon": "home"
+            },
+            "children": [
+                {
+                    "path": "/index",
+                    "name": "index",
+                    "component": "index/index",
+                    "meta": {
+                        "title": "首页",
+                        "icon": "iconfont icon-iconindexsel1-copy"
+                    },
+                    "children":[
+                        {
+                            "path": "/index/echarts",
+                            "name": "echarts",
+                            "component": "index/echarts",
+                            "meta": {
+                                "title": "echarts",
+                                "icon": "iconfont icon-eCharts-copy"
+                            }
+                        },
+                        {
+                            "path": "/index/mapcom",
+                            "name": "mapcom",
+                            "component": "index/mapcom",
+                            "meta": {
+                                "title": "map地图",
+                                "icon": "iconfont icon-map-copy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "path": "/elm",
+                    "name": "elm",
+                    "component": "elm/elm",
+                    "meta": {
+                        "title": "elementUi",
+                        "icon": "iconfont icon-elementary-copy"
+                    },
+                    "children":[
+                        {
+                            "path": "/elm/elm1",
+                            "name": "elm1",
+                            "component": "elm/elm1",
+                            "meta": {
+                                "title": "elm/elm1",
+                                "icon": "elm1"
+                            }
+                        },
+                        {
+                            "path": "/elm/elm2",
+                            "name": "elm2",
+                            "component": "elm/elm2",
+                            "meta": {
+                                "title": "elm/elm2",
+                                "icon": "elm2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "path": "/demo",
+                    "name": "demo",
+                    "component": "demo",
+                    "meta": {
+                        "title": "demo",
+                        "icon": "iconfont icon-elementary-copy"
+                    }
+                }
+            ]
+        },
+        {
+            "path": "*",
+            "name": "404",
+            "component":"404"
+        }
+      ]
+    }
+}
